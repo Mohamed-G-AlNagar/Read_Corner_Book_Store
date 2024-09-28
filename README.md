@@ -27,9 +27,9 @@ read-corner-library/
 - JWT
 - Spring Mail
 - Thymeleaf
-- Stripe
-- Cloudinary
-- Swagger
+- `Stripe`
+- `Cloudinary`
+- `Swagger`
 
 ### Frontend
 - React 18.3.1
@@ -55,11 +55,11 @@ read-corner-library/
 2. **Book Management**
    - CRUD operations for books
    - Search and filter by category, author, and title
-   - Image upload for book covers
+   - `Image upload to cloud for book covers`
 3. **Shopping Cart**
    - Add, remove, update items in the cart
 4. **Order Management**
-   - Create orders from cart with Stripe integration
+   - Create orders from cart with `Stripe integration`
    - Order status management
 5. **User Management**
    - CRUD operations for users
@@ -72,16 +72,17 @@ read-corner-library/
    - Login, signup, email verification
    - Protected routes for authenticated users
 2. **Book Browsing**
+   - `Quick search with auto-suggestions`
    - Featured books on homepage
-   - Book search and filtering
-   - View book details and feedback
+   - Book search and filtering using category, title search, price
+   - View book details and feedbacks
 3. **Shopping Cart and Orders**
    - Add/remove items, update quantities
    - Place orders using Stripe
-   - Order history and status tracking
+   - `Order history and status tracking`
 4. **User and Admin Panels**
-   - Profile management
-   - Admin: Manage books, orders, and users
+   - User: Profile management, My Orders History and status
+   - Admin: User + Manage books, orders, and users
 5. **Responsive Design**
    - Mobile-friendly UI
 
@@ -143,6 +144,7 @@ Cloudinary is used for storing book cover images, allowing for scalable image st
   - Email: mag3789@gmail.com
   - Password: m.A123456789
 - Frontend port should be set to `5173` for proper redirection from payment and email verification processes.
+- DB properties.yml credentials to e modified to your local DB , or you can use commented hosted DB.
 
 ## Getting Started
 

@@ -127,6 +127,8 @@ read-corner-library/
 - `/book/:id`: Book details
 - `/booksFilter`: Book filtering
 - `/order/success`, `/order/cancel`: Payment status (protected)
+- `/forgot-password-request` : Forgot password - Send token code and link to email.
+- `/reset-password-confirm` : Reset password after confirm using token
 - `/*`: Not Found page
 
 ## Security

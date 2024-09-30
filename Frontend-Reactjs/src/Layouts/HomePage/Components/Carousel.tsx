@@ -13,13 +13,13 @@ export const Carousel = () => {
 
     return (
         <div className='container mt-5' style={{ height: '550px' }}>
-            <div className='homepage-carousel-title mb-2'>
-                <h3>Find your next book, New Arrivals</h3>
+            <div className='homepage-carousel-title mb-2 '>
+                <h3 className='fadeInUp'>Find your next book, New Arrivals</h3>
             </div>
             
             {/* Desktop View */}
-            <div id='carouselDesktop' className='carousel carousel-dark slide mt-2 d-none d-lg-block' data-bs-ride="carousel" data-bs-interval='false'>
-                <div className='carousel-inner'>
+            <div id='carouselDesktop' className='carousel carousel-dark slide mt-2 d-none d-lg-block fadeInUp' data-bs-ride="carousel" data-bs-interval='false'>
+                <div className='carousel-inner fadeInUp'>
                     {books && books.length > 0 && (
                         <>
                             {[0, 3, 6].map((startIndex) => (
@@ -47,8 +47,8 @@ export const Carousel = () => {
             </div>
 
             {/* Mobile View */}
-            <div id='carouselMobile' className='carousel carousel-dark slide mt-2 d-block d-lg-none' data-bs-ride="carousel" data-bs-interval='false'>
-                <div className='carousel-inner'>
+            <div id='carouselMobile' className='carousel carousel-dark slide mt-2 d-block d-lg-none fadeInUp' data-bs-ride="carousel" data-bs-interval='false'>
+                <div className='carousel-inner fadeInUp'>
                     {books && books.length > 0 && (
                         <>
                             {books.map((book, index) => (
@@ -74,7 +74,7 @@ export const Carousel = () => {
             </div>
 
             <div className='homepage-carousel-title mt-3 mb-5'>
-                <Link className='btn btn-outline-secondary btn-lg' to='/booksFilter'>View More</Link>
+                <Link className='btn btn-outline-secondary btn-lg fadeInUp' to='/booksFilter'>View More</Link>
             </div>
         </div>
     );

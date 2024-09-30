@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 export const Heros = () => {
     return (
         <div>
-            <div className='d-none d-lg-block mt-5 mb-5'>
-                <div className='row g-0 mt-5'>
+            <div className='d-none d-lg-block mt-5 mb-5 fadeInUp '>
+                <div className='row g-0 mt-5 '>
                     <div className='col-sm-6 col-md-6'>
                         <div className='col-image-left'></div>
                     </div>
                     <div className='col-4 col-md-4 container d-flex justify-content-center align-items-center'>
-                        <div className='ml-2'>
+                        <div className='ml-2 fadeInUp'>
                             <h1>Discover Your Next Great Read</h1>
                             <p className='lead'>
                                 Embark on a literary journey with us! Share your reading adventures 
@@ -24,7 +24,7 @@ export const Heros = () => {
                 <div className='row g-0'>
                     <div className='col-4 col-md-4 container d-flex 
                         justify-content-center align-items-center'>
-                        <div className='ml-2'>
+                        <div className='ml-2 fadeInUp'>
                             <h1>A Living Library at Your Fingertips</h1>
                             <p className='lead'>
                                 Experience the thrill of a constantly evolving collection! 

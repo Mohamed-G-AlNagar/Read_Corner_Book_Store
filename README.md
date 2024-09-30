@@ -1,4 +1,8 @@
-# Read Corner Book Store
+# Read Corner Book Store - Mono Repo
+
+## For Indevidual Detailed Readme
+### - Backend Repo : https://github.com/Mohamed-G-AlNagar/Read_Corner_Backend
+### - Front Repo : https://github.com/Mohamed-G-AlNagar/Read_Corner_Frontend
 
 ## Project Overview
 
@@ -52,6 +56,7 @@ read-corner-library/
    - User registration with email verification
    - JWT-based login and authentication
    - Account activation
+   - Forget and reset password using token sent to email
 2. **Book Management**
    - CRUD operations for books
    - Search and filter by category, author, and title

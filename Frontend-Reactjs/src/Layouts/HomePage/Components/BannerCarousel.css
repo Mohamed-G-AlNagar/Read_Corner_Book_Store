@@ -1,0 +1,71 @@
+.jumbotron {
+  height: 100vh;
+  background: none; 
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  animation: slideAnimation 16s infinite;
+
+}
+
+.slideshow img.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slideshow img.transitioning {
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.text-shadow {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.95); 
+
+}
+
+
+.slideshow img:not(.visible) {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+.slideshow img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slideshow img:nth-child(3) {
+  animation-delay: 8s;
+}
+

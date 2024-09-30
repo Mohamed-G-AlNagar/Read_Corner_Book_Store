@@ -1,0 +1,11 @@
+.combo-offer {
+  border-radius: 20px;
+  transition: border-radius 0.5s, transform 0.5s, box-shadow 1s;
+  /* box-shadow: 0 15px 30px rgba(88, 88, 89, 0.929); */
+}
+
+.combo-offer:hover {
+  border-radius: 30px;
+  transform: scale(1.02);
+  /* box-shadow: 0 50px 10px rgba(31, 31, 243, 0.851); */
+}
